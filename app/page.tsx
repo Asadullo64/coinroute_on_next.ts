@@ -32,6 +32,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="container">
+      <div className="hidden">{currentPrice}</div>
       <Navbar onPairChange={handlePairChange} />
       <LineChart currencyPair={currencyPair} />
     </div>
