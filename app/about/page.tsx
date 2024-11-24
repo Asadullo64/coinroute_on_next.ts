@@ -43,14 +43,14 @@ const Aboutpage = () => {
       <p>
         This project challenged me to think critically and learn new tools,
         especially in the realm of WebSockets and real-time applications.
-        Although I&apos;m not yet at the level of a seasoned professional, I am
+        Although I am not yet at the level of a seasoned professional, I am
         constantly improving my skills and striving to build more complex and
         robust applications.
       </p>
       <br />
       <p>
         The CoinRoutes Project reflects my dedication to learning,
-        problem-solving, and applying my knowledge to practical scenarios. It&apos;s
+        problem-solving, and applying my knowledge to practical scenarios. It is
         a significant step in my journey as a developer, and I look forward to
         taking on more advanced projects in the future.
       </p>

@@ -119,6 +119,7 @@ export const LineChart: React.FC<{ currencyPair: string }> = ({
               bestAsk={bestAskData[bestAskData.length - 1]?.price}
             />
           </div>
+           <p className="hidden">Current Price: {priceData[priceData.length - 1]?.price}</p>
           <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
         <LadderView
