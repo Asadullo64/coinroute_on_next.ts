@@ -1,0 +1,41 @@
+@import "@/src/assets/sass/variables";
+@import "@/src/assets/sass/media";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 16px;
+  @include x-small {
+    flex-direction: column;
+    gap: 25px;
+  }
+  @include x-large {
+    flex-direction: row;
+    gap: 10px;
+  }
+  &_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: auto;
+    li {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      &:first-child {
+        margin-right: 24px;
+      }
+
+      a {
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}

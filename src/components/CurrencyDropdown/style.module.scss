@@ -1,0 +1,54 @@
+@import "@/src/assets/sass/variables.scss";
+@import "@/src/assets/sass/media";
+
+
+.currency-dropdown {
+  display: flex;
+  flex-direction: column;
+  // max-width: 300px;
+  width: 100%;
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s;
+    width: 100%;
+    &:hover {
+      border-color: #007bff;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    option {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+
+  @include x-small {
+    // width: 300px;
+    select {
+      font-size: 0.875rem;
+      padding: 0.4rem;
+    }
+  }
+
+  @include large {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,57 @@
+@import "@/src/assets/sass/variables.scss";
+@import "@/src/assets/sass/media";
+
+@mixin style($borderColor, $color) {
+  border: 2px solid $borderColor;
+  border-radius: 10px;
+  color: $color;
+  font-weight: bold;
+}
+
+.prices {
+  display: flex;
+  gap: 10px;
+  @include x-small {
+    flex-direction: column;
+  }
+  @include large {
+    flex-direction: row;
+  }
+
+  &__bestBid {
+    @include style($green, $green);
+    &::before {
+      content: "▲ ";
+    }
+    @include x-small {
+      width: 65%;
+      padding: 10px;
+      font-size: 14px;
+    }
+    @include small {
+      padding: 15px;
+      font-size: 18px;
+    }
+    @include x-large {
+      width: 45%;
+    }
+  }
+  &__bestAsk {
+    @include style($red, $red);
+    &::before {
+      content: "▼ ";
+    }
+    @include x-small {
+      width: 65%;
+      padding: 10px;
+      font-size: 14px;
+    }
+    @include small {
+      padding: 15px;
+      font-size: 18px;
+    }
+    @include x-large {
+      width: 45%;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@import "@/src/assets/sass/variables.scss";
+@import "@/src/assets/sass/media";
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+      inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+  }
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+.ladder-view {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  @include x-small {
+    flex-direction: column;
+  }
+  @include large {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.orders-container {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  width: 350px;
+  @include scrollbar();
+  @include x-small {
+    height: 400px;
+  }
+  @include x-large {
+    height: 500px;
+  }
+}
+
+.orders-header {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  table {
+    width: 100%;
+    border: 1px solid #ddd;
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+  }
+}
+
+.highlight {
+  transition: background-color 0.3s ease; // Плавное изменение фона
+}
+
+// .buy-orders{
+//   background-color: rgb(57, 193, 57);
+// }
+// .sell-orders{
+//   background-color: rgb(205, 54, 54);
+// }
+
+// .price-up {
+//   background-color: rgba(0, 255, 0, 0.2); // Зелёный фон для роста цены
+// }
+
+// .price-down {
+//   background-color: rgba(255, 0, 0, 0.2); // Красный фон для падения цены
+// }
+
+// .size-empty {
+//   background-color: rgba(200, 200, 200, 0.1); // Серый фон для пустого size
+// }
+
+// .size-small {
+//   background-color: rgba(0, 0, 255, 0.1); // Лёгкий синий фон для маленького size
+// }
+
+// .size-large {
+//   background-color: rgba(0, 0, 255, 0.3); // Более яркий синий фон для большого size
+// }
+
+.orders-table .highlight {
+  background-color: #e6ffe6;
+}
+
+.orders-table .sell-highlight {
+  background-color: #ffe6e6;
+}

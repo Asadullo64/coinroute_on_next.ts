@@ -1,0 +1,27 @@
+@import "@/src/assets/sass/variables.scss";
+@import "@/src/assets/sass/media";
+
+.price-chart {
+  align-items: center;
+  @include x-small {
+    display: block;
+  }
+  @include x-large {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    gap: 25px;
+  }
+  .prices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .highcharts-container {
+    width: 100%; // Ширина графика на 100%
+    max-width: 800px; 
+ 
+  }
+}
