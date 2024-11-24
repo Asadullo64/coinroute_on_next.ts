@@ -16,9 +16,8 @@ interface TickerMessage {
 export const LineChart: React.FC<{ currencyPair: string }> = ({
   currencyPair,
 }) => {
-  const [priceData, setPriceData] = useState<{ price: number; time: number }[]>(
-    []
-  );
+  const [priceData, setPriceData] = useState<{ price: number; time: number }[]>([]);
+
   const [bestBidData, setBestBidData] = useState<
     { price: number; time: number }[]
   >([]);

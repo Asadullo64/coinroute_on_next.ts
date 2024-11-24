@@ -8,34 +8,34 @@ const Aboutpage = () => {
       </Link>
       <h1>### About the CoinRoutes Project</h1>
       <p>
-        The <strong>CoinRoutes Project</strong> is a demonstration of my skills
-        in frontend development, focusing on real-time data processing and
-        visualization using WebSockets. The main goal of this project was to
-        showcase my ability to work with dynamic data streams and build an
-        interactive user interface for a cryptocurrency order book system.
+        The CoinRoutes Projectis a demonstration of my skills in frontend
+        development, focusing on real-time data processing and visualization
+        using WebSockets. The main goal of this project was to showcase my
+        ability to work with dynamic data streams and build an interactive user
+        interface for a cryptocurrency order book system.
       </p>
       <ul>
         <h2>Key features of the project include:</h2>
         <li>
-          <strong>Real-time Data Integration:</strong> Leveraging WebSocket
-          APIs to fetch live market data, such as order books, price ladders,
-          and top-of-book information for various cryptocurrency pairs.
+          Real-time Data Integration: Leveraging WebSocket APIs to fetch live
+          market data, such as order books, price ladders, and top-of-book
+          information for various cryptocurrency pairs.
         </li>
         <br />
         <li>
-          <strong>Interactive Visualizations:</strong> Implementing widgets
-          like price charts, currency pair selectors, and dynamic tables to
-          represent market data effectively.
+          Interactive Visualizations: Implementing widgets like price charts,
+          currency pair selectors, and dynamic tables to represent market data
+          effectively.
         </li>
         <br />
         <li>
-          <strong>State Management:</strong> Using Redux to ensure smooth data
-          flow and manage complex application states efficiently.
+          State Management: Using Redux to ensure smooth data flow and manage
+          complex application states efficiently.
         </li>
         <br />
         <li>
-          <strong>Adaptive Design:</strong> Ensuring the app is fully responsive
-          and provides a seamless user experience across different devices.
+          Adaptive Design: Ensuring the app is fully responsive and provides a
+          seamless user experience across different devices.
         </li>
         <br />
       </ul>
