@@ -10,7 +10,7 @@ interface OrderBookData {
 }
 
 const HomePage: React.FC = () => {
-  const [currencyPair, setCurrencyPair] = useState("BTC-USD"); // Начальная валютная пара
+  const [currencyPair, setCurrencyPair] = useState("BTC-USD"); 
   const [currentPrice, setCurrentPrice] = useState<number | null>(null);
 
   const handlePairChange = (pair: string) => {
@@ -32,8 +32,8 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="container">
-      <div className="hidden">{currentPrice}</div>
       <Navbar onPairChange={handlePairChange} />
+      <h2 className="hidden">Current Price: {currentPrice ? `$${currentPrice.toFixed(2)}` : "Loading..."}</h2>
       <LineChart currencyPair={currencyPair} />
     </div>
   );

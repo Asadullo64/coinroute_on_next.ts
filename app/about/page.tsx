@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Aboutpage = () => {
+const Aboutpage: React.FC = () => {
   return (
     <div className="container">
       <Link href={"/"}>
@@ -8,7 +8,7 @@ const Aboutpage = () => {
       </Link>
       <h1>### About the CoinRoutes Project</h1>
       <p>
-        The CoinRoutes Projectis a demonstration of my skills in frontend
+        The CoinRoutes Project is a demonstration of my skills in frontend
         development, focusing on real-time data processing and visualization
         using WebSockets. The main goal of this project was to showcase my
         ability to work with dynamic data streams and build an interactive user
